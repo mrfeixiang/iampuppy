@@ -1,18 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4a6fa5;
+    margin-bottom: 20px;
+}
+
 #game-container {
-    width: 800px;
+    width: 100%;
     height: 400px;
     margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e0e0e0;
 }
 
 #conversation-panel {
-    width: 800px;
-    margin: 0 auto;
-    padding: 10px;
-    background: #f0f0f0;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#dialogue {
+    font-size: 18px;
+    margin-bottom: 20px;
+    min-height: 50px;
+}
+
+#choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 #choices button {
-    margin: 5px;
-    padding: 5px 10px;
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#choices button:hover {
+    background-color: #3a5985;
+}
+
+#needs-display {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.need-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.need-bar span {
+    width: 100px;
+}
+
+.bar-container {
+    flex-grow: 1;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    width: 50%;
+    background-color: #4CAF50;
+    transition: width 0.3s;
+}
+
+/* Add responsive design */
+@media (max-width: 600px) {
+    #game-container {
+        height: 300px;
+    }
+    
+    #dialogue {
+        font-size: 16px;
+    }
+    
+    #choices button {
+        padding: 8px 16px;
+    }
 }
