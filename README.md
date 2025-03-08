@@ -2,6 +2,11 @@
 
 **IAmPuppy** is a web-based game designed to teach players about the responsibilities of owning a pet through an interactive simulation. Players care for a virtual puppy by making choices and performing tasks, guided by conversations with a virtual pet expert. The game covers feeding, walking, cleaning, and managing the puppy's happiness, including planning for travel.
 
+# 🌟 My Project 🌟
+
+**GitHub Repository**: [View on GitHub](https://github.com/mrfeixiang/iampuppy)  
+**Live Demo**: [Play Now](https://mrfeixiang.github.io/yiampuppy) *(optional)*
+
 ---
 
 ## Table of Contents
