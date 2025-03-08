@@ -3,17 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IAmPuppy</title>
+    <title>IAmPuppy - Pet Care Simulation</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="game-container"></div>
-    <div id="conversation-panel">
-        <p id="dialogue"></p>
-        <div id="choices"></div>
+    <div class="container">
+        <h1>IAmPuppy</h1>
+        <div id="game-container"></div>
+        <div id="conversation-panel">
+            <p id="dialogue"></p>
+            <div id="choices"></div>
+        </div>
+        <div id="needs-display">
+            <div class="need-bar">
+                <span>Hunger:</span>
+                <div class="bar-container">
+                    <div id="hunger-bar" class="bar"></div>
+                </div>
+            </div>
+            <div class="need-bar">
+                <span>Thirst:</span>
+                <div class="bar-container">
+                    <div id="thirst-bar" class="bar"></div>
+                </div>
+            </div>
+            <div class="need-bar">
+                <span>Energy:</span>
+                <div class="bar-container">
+                    <div id="energy-bar" class="bar"></div>
+                </div>
+            </div>
+            <div class="need-bar">
+                <span>Hygiene:</span>
+                <div class="bar-container">
+                    <div id="hygiene-bar" class="bar"></div>
+                </div>
+            </div>
+            <div class="need-bar">
+                <span>Happiness:</span>
+                <div class="bar-container">
+                    <div id="happiness-bar" class="bar"></div>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="js/phaser.min.js"></script>
-    <script src="js/game.js"></script>
+
+    <!-- Added Phaser from CDN instead of local file for GitHub Pages compatibility -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.55.2/phaser.min.js"></script>
     <script src="js/conversation.js"></script>
+    <script src="js/game.js"></script>
 </body>
 </html>
