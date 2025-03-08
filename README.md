@@ -5,7 +5,7 @@
 # 🌟 My Project 🌟
 
 **GitHub Repository**: [View on GitHub](https://github.com/mrfeixiang/iampuppy)  
-**Live Demo**: [Play Now](https://mrfeixiang.github.io/yiampuppy) *(optional)*
+**Live Demo**: [Play Now](https://mrfeixiang.github.io/iampuppy) *(optional)*
 
 ---
 
